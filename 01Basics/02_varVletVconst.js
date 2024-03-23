@@ -8,15 +8,17 @@ with var within the same scope, it overrides the previous declaration.
 */
 
 function exampleVar() {
-    console.log(x); // undefined, variable declaration is hoisted
+    console.log("Printing value of x before declaring: "+x); // undefined, variable declaration is hoisted
     var x = 10;
     if (true) {
         var x = 20;
-        console.log(x); // Outputs 20
+        var x = 40; // works
+        console.log("Value of var x inside block: "+x); // Outputs 40
     }
-    console.log(x); // Outputs 20
+    console.log("Value of var x outside block: "+x); // Outputs 40
 }
 exampleVar();
+
 /*
 let:
 let is block-scoped, meaning it is only visible within the block it's declared in (including loops, 
@@ -30,9 +32,10 @@ function exampleLet() {
     let x = 10;
     if (true) {
         let x = 20;
-        console.log(x); // Outputs 20
+        // let x = 30;// will throw error
+        console.log("Value of let x inside block: "+x); // Outputs 20
     }
-    console.log(x); // Outputs 10
+    console.log("Value of let x outside block: "+x); // Outputs 10
 }
 exampleLet();
 
@@ -47,6 +50,6 @@ function exampleConst() {
     // console.log(x); // ReferenceError: Cannot access 'x' before initialization
     const x = 10;
     // x = 20; // This would throw an error because x is constant and cannot be reassigned
-    console.log(x); // Outputs 10
+    console.log("Value of const x:"+x); // Outputs 10
 }
 exampleConst();
