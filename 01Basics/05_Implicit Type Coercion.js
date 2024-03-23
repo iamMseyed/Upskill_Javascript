@@ -32,4 +32,9 @@ a == b // Returns true because both 'a' and 'b' are converted to the same type a
 var a = 226;
 var b = "226";
 
-a === b // Returns false because coercion does not take place and the  operands are of different types. Hence they are not equa
+a === b // Returns false because coercion does not take place and the  operands are of different types. Hence they are not equal.
+
+let val1 = 10;
+let val2 = 20;
+let total = val1+val2;
+console.log("Value of c is :"+total);

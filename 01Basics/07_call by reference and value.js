@@ -15,7 +15,7 @@ function changePrimitive(num) {
   }
   
   let obj = {
-    count: 10
-};
+    "count": 10
+}
   changeObject(obj);
   console.log("Outside changeObject: " + obj.count);

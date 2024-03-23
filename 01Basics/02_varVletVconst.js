@@ -33,7 +33,8 @@ function exampleLet() {
     if (true) {
         let x = 20;
         // let x = 30;// will throw error
-        console.log("Value of let x inside block: "+x); // Outputs 20
+        x = 30;
+        console.log("Value of let x inside block: "+x); // Outputs 30
     }
     console.log("Value of let x outside block: "+x); // Outputs 10
 }
