@@ -1,5 +1,5 @@
-//call, apply and bind
-
+/*call(), bind(), and apply() are methods that allow you to control the this keyword in a 
+function and borrow methods from one object to another. */
 let personOne={
   firstName:"firstOne",
   lastName:"lastOne"

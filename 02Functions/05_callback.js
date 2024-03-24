@@ -18,6 +18,48 @@ function divideByHalf(sum){
     operation(sum);
   }
   
-  operationOnSum(3, 3, divideByHalf); // Outputs 3
+  // operationOnSum(3, 3, divideByHalf); // Outputs 3
   
-  operationOnSum(5, 5, multiplyBy2); // Outputs 20
+  // operationOnSum(5, 5, multiplyBy2); // Outputs 20
+
+
+
+  function fun1(a, b){
+    console.log (a+b);
+  }
+
+  function fun2(a,b){
+    console.log(a-b);
+  }
+
+  function fun3(a,b,op){
+    let n1=a; //10 //1
+    let n2=b; //20 //3
+    op(n1,n2); //fun1(10,20) //fun2(1,3)
+  }
+
+  fun3(10,20,fun1); //3
+  fun3(1,3,fun2); //20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
