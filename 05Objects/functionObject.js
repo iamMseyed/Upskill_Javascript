@@ -9,11 +9,12 @@ let dailySchedule={
 
 let dailySchedule1={
     day:'Monday1',
-    meetingsLeft:01,
-    meetDone:01,
+    meetingsLeft:'01',
+    meetDone:'01',
     addMeeting:function(){
         console.log(this)
-        //this -> what ever the properties inside this object display those and yeah via this other properties can be accessed
+/*this -> what ever the properties inside this object display those and via this
+ other properties can be accessed*/
     }
 }
 
@@ -28,7 +29,7 @@ dailySchedule1.addMeeting()
 
 let dailySchedule3={
     day:'Mondler',
-    meetingsLeft:01,
+    meetingsLeft:'01',
     meetDone:3,
     addMeeting:function(num){
         this.meetingsLeft = this.meetingsLeft +num

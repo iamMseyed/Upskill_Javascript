@@ -1,7 +1,7 @@
 let myYTvid= {
     title:'Objects In JS',
     vidLenth:15,
-    vidCreator:'Muzafar Seyed',
+    vidCreator:'Some name',
     vidDes:'Video about Objects in java script'
 }
 
@@ -11,7 +11,7 @@ console.log(`Hey new video on ${myYTvid.title} by ${myYTvid.vidCreator} has been
 
 let course={
     courseName: 'C Progamming',
-    courseAuthor:'Muzafar Seyed',
+    courseAuthor:'Somr name',
     courseDuration:'5 hours',
     coursePrice:'10 Dollars',
     courseCertification:'Yes'
@@ -20,6 +20,3 @@ let course={
 console.log(`New course is available:\n Tittle: ${course.courseName},
  Author: ${course.courseAuthor}, Course duration: ${course.courseDuration}, Certification avaliable: ${course.courseCertification}
  with Price Tag of: ${course.coursePrice}`)
-
- //look here carefully, we are simply accessing value via arrayName.arrayElement
- //but if elements where stores as objects then we cant simply, we have to use findIndex()

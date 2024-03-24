@@ -1,7 +1,7 @@
 let dailySchedule={
     day:'Monday',
-    meetingsLeft:0,
-    meetDone:0
+    meetingsLeft:'0',
+    meetDone:'0'
 }
 console.log(`Initiall values`)
 console.log(dailySchedule)
